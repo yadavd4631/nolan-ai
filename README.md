@@ -1,12 +1,66 @@
-# React + Vite
+Project Name: NolanAI – Film Production Web App 🎬✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tech Stack: React.js, Firebase Authentication, React Router, Tailwind CSS, React Toastify
 
-Currently, two official plugins are available:
+🔹 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+NolanAI is a collaborative film production suite designed to assist users in managing their film projects from concept to production. The platform allows users to sign up, log in securely, and navigate through different sections like Home, Dashboard, and About.
 
-## Expanding the ESLint configuration
+🎯 Key Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+User Authentication (Firebase)
+
+Users can sign up and log in using Firebase Authentication.
+
+Unauthorized users are restricted from accessing protected pages.
+
+Login sessions are managed using localStorage.
+
+Protected Routes (React Router)
+
+Users cannot access Dashboard, Home, or About without logging in.
+
+Redirects users to the login page if they try to access restricted content.
+
+Dynamic Navigation Bar (React Router NavLink)
+
+Displays different UI states based on whether the user is logged in.
+
+Highlights the active page with a color change.
+
+Provides a Logout button that clears the session.
+
+Video Player Integration (React Player)
+
+The Home page features a video using ReactPlayer to enhance user engagement.
+
+Interactive Notifications (React Toastify)
+
+Users receive real-time notifications (e.g., login success, logout confirmation).
+
+Smooth Navigation Experience
+
+Clicking Start Creation redirects users to the Dashboard.
+
+Uses useNavigate() for seamless page transitions.
+
+🛠️ How It Works
+User Authentication:
+
+New users sign up and create an account.
+
+Returning users log in to access their dashboard.
+
+Authentication is handled via Firebase.
+
+Navigation & Access Control:
+
+Once logged in, users can explore Home, Dashboard, and About pages.
+
+If a user is not logged in, they are redirected to the Login page.
+
+Film Project Management:
+
+The Dashboard provides tools for managing film projects (future expansion).
+
+Video content is displayed on the Home page.
