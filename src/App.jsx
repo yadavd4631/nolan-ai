@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import ProtectedRoute from "./comonents/ProtectedRoute";
+import Aichat from "./comonents/Aichat";
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/about" element={<About />} />
           </Route>
+          <Route path="/aichat" element={<Aichat />} />
+          
         </Routes>
       </div>
     </div>

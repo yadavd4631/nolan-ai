@@ -45,6 +45,14 @@ const Navbar = () => {
             >
               <li>About</li>
             </NavLink>
+            <NavLink
+              to="/aichat"
+              className={({ isActive }) =>
+                isActive ? "text-red-400 font-bold" : "text-white"
+              }
+            >
+              <li>Chat bot</li>
+            </NavLink>
           </ul>
         </nav>
       </div>
